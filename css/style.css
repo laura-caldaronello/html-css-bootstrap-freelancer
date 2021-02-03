@@ -1,5 +1,68 @@
+/* inizio classi preliminari */
+
 * { /* sarà compatibile con bootstrap? */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* fine classi preliminari */
+
+/* inizio classi generiche */
+
+/* debug, che mi pare non sia presente in bootstrap */
+
+.debug [class^="col-"] {
+  min-height: 50px;
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+.debug [class^="col-"] [class^="col-"] {
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+.debug [class^="col-"] [class^="col-"] [class^="col-"] {
+  background-color: lightgrey;
+  border: 1px solid grey;
+}
+
+/* per viasualizzare o meno contenuto in base alla larghezza */
+
+[class*="display"] {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .display-xs {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .display-sm {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .display-md {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .display-lg {
+    display: block;
+  }
+}
+
+
+/* fine classi generiche */
+
+/* inizio classi specifiche */
+
+header #fixed {
+  position: fixed;
+  height: 80px;
+}
+header #fixed + div {
+  margin-top: 80px;
+}
+
+/* fine classi specifiche */
