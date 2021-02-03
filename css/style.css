@@ -8,6 +8,12 @@
 
 /* debug, che mi pare non sia presente in bootstrap */
 
+.debug [class^="container"] {
+  background-color: orange;
+}
+.debug [class^="container-"] {
+  background-color: yellow;
+}
 .debug [class^="col-"] {
   min-height: 50px;
   background-color: lightblue;
@@ -49,6 +55,7 @@
   padding-left: 0;
 }
 
+/* usare classi apposite? */
 ul {
   list-style: none;
 }
@@ -67,10 +74,15 @@ header #fixed {
 }
 header #fixed + div {
   margin-top: 80px;
+  height: 300px;
 }
-header #fixed [class^="col-"] > * {
+header #fixed [class^="col-"],
+header #fixed h3 {
   height: 80px;
   line-height: 80px;
+}
+header #fixed button {
+  background-color: transparent;
 }
 
 /* fine classi specifiche */
