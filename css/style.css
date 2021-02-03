@@ -1,10 +1,6 @@
 /* inizio classi preliminari */
 
-* { /* sarà compatibile con bootstrap? */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /* fine classi preliminari */
 
@@ -26,32 +22,39 @@
   border: 1px solid grey;
 }
 
-/* per viasualizzare o meno contenuto in base alla larghezza */
+/* resettare margin e padding dei titoli, forse dovrei dirgli che vale solo per loro? */
 
-[class*="display"] {
-  display: none;
+.mt-0 {
+  margin-top: 0;
 }
-@media screen and (max-width: 767px) {
-  .display-xs {
-    display: block;
-  }
+.mr-0 {
+  margin-right: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .display-sm {
-    display: block;
-  }
+.mb-0 {
+  margin-bottom: 0;
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .display-md {
-    display: block;
-  }
+.ml-0 {
+  margin-left: 0;
 }
-@media screen and (min-width: 1200px) {
-  .display-lg {
-    display: block;
-  }
+.pt-0 {
+  padding-top: 0;
+}
+.pr-0 {
+  padding-right: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pl-0 {
+  padding-left: 0;
 }
 
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
 
 /* fine classi generiche */
 
@@ -59,10 +62,15 @@
 
 header #fixed {
   position: fixed;
-  height: 80px;
+  top: 0;
+  z-index: 1;
 }
 header #fixed + div {
   margin-top: 80px;
+}
+header #fixed [class^="col-"] > * {
+  height: 80px;
+  line-height: 80px;
 }
 
 /* fine classi specifiche */
