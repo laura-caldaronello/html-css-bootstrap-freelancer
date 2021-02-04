@@ -32,12 +32,14 @@
   max-width: 90%;
   margin: 0 auto;
 }
+.ms_wrapped_70 {
+  max-width: 70%;
+  margin: 0 auto;
+}
 .ms_wrapped_50 {
   max-width: 50%;
   margin: 0 auto;
 }
-
-
 
 /* resettare margin e padding dei titoli, forse dovrei dirgli che vale solo per loro e altri specifici elementi? */
 
@@ -191,6 +193,13 @@ header #jumbo p {
 .ms_btn_green {
   background-color: rgb(26 188 156);
   color: white;
+}
+
+footer .ms_full:first-child {
+  background-color: rgb(58 84 109);
+}
+footer .ms_full:last-child {
+  background-color: rgb(44 62 80);
 }
 
 /* fine classi specifiche */
