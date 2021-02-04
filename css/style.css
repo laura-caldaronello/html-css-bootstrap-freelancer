@@ -19,7 +19,6 @@
   background-color: yellow;
 }
 .ms_debug [class^="col-"] {
-  min-height: 50px;
   border: 1px solid blue;
 }
 .ms_debug [class^="col-"] [class^="col-"] {
@@ -74,6 +73,12 @@
   height: 40px;
   line-height: 40px;
 }
+.ms_w_40 {
+  width: 40px;
+}
+.ms_w_100 {
+  width: 100px;
+}
 
 .ms_relative {
   position: relative;
@@ -109,6 +114,12 @@
   background-color: transparent;
 }
 
+hr.ms_hr_bold {
+  border: 2px solid;
+  transform: translateY(-50%); /* altrimenti si posiziona sotto la prima metà della line-height */
+
+}
+
 /* usare classi apposite? */
 ul {
   list-style: none;
@@ -129,12 +140,11 @@ header #fixed {
 header #jumbo {
   margin-top: 70px;
 }
-
-main img.ms_round {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border-color: white;
-  background-color: white;
+header #jumbo img {
+  height: 300px;
 }
+header #jumbo p {
+  margin: 15px auto;
+}
+
 /* fine classi specifiche */
