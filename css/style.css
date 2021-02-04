@@ -145,6 +145,9 @@ body {
 .ms_btn_transparent {
   background-color: transparent;
 }
+.ms_btn_noshadow {
+  text-shadow: none;
+}
 
 hr.ms_hr_bold {
   border: 2px solid;
@@ -182,7 +185,6 @@ header #jumbo p {
   margin: 15px auto;
 }
 
-/* questo lo usiamo solo in questo progetto */
 .ms_star_container {
   vertical-align: top;
 }
@@ -199,7 +201,7 @@ header #jumbo p {
   border-radius: 0;
 }
 .form-control.ms_personal::placeholder {
-  color: black;
+  color: grey;
 }
 
 .ms_btn_green {
@@ -217,7 +219,7 @@ footer .ms_full:last-child {
   background-color: rgb(44 62 80);
 }
 footer .ms_rounded {
-  display: inline-block;
+  display: block;
   width: 30px;
   height: 30px;
   border: 1px solid;
