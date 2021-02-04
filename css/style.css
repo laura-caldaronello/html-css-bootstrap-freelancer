@@ -89,6 +89,9 @@
 .ms_w_40 {
   width: 40px;
 }
+.ms_w_70 {
+  width: 70px;
+}
 .ms_w_100 {
   width: 100px;
 }
@@ -208,6 +211,7 @@ footer .ms_full:last-child {
   background-color: rgb(44 62 80);
 }
 footer .ms_rounded {
+  display: inline-block;
   width: 30px;
   height: 30px;
   border: 1px solid;
