@@ -5,12 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 /* fine classi preliminari */
 
 /* inizio classi generiche */
 
-/* debug, che mi pare non sia presente in bootstrap */
+/* inizio debug */
 
 .ms_debug [class^="container"] {
   background-color: orange;
@@ -26,6 +29,19 @@
 }
 .ms_debug [class^="col-"] [class^="col-"] [class^="col-"] {
   border: 1px solid grey;
+}
+
+/* fine debug */
+
+.ms_fw_500 {
+  font-weight: 500;
+}
+.ms_fw_700 {
+  font-weight: 700;
+}
+
+.ms_full {
+  width: 100%;
 }
 
 .ms_wrapped_90 {
@@ -68,7 +84,6 @@
   padding-left: 0;
 }
 
-
 [class^="col-"] > .ms_mt_mb_15 {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -78,9 +93,7 @@
   padding-bottom: 15px;
 }
 
-.ms_full {
-  width: 100%;
-}
+/* hanno senso le classi seguenti? */
 
 .ms_h_40 {
   height: 40px;
@@ -135,6 +148,7 @@
 
 hr.ms_hr_bold {
   border: 2px solid;
+  border-radius: 2px;
   transform: translateY(-50%); /* altrimenti si posiziona sotto la prima metà della line-height */
 }
 
@@ -143,16 +157,8 @@ hr.ms_hr_bold {
   border-color: white;
 }
 .ms_grey {
-  color: grey;
-  border-color: grey;
-}
-
-/* usare classi apposite? */
-ul {
-  list-style: none;
-}
-ul li {
-  display: inline-block;
+  color: #333333;
+  border-color: #333333;
 }
 
 /* fine classi generiche */
