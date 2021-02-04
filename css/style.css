@@ -20,15 +20,12 @@
 }
 .ms_debug [class^="col-"] {
   min-height: 50px;
-  background-color: lightblue;
   border: 1px solid blue;
 }
 .ms_debug [class^="col-"] [class^="col-"] {
-  background-color: lightgreen;
   border: 1px solid green;
 }
 .ms_debug [class^="col-"] [class^="col-"] [class^="col-"] {
-  background-color: lightgrey;
   border: 1px solid grey;
 }
 
