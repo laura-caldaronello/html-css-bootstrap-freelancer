@@ -1,6 +1,10 @@
 /* inizio classi preliminari */
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* fine classi preliminari */
 
@@ -28,7 +32,7 @@
   border: 1px solid grey;
 }
 
-/* resettare margin e padding dei titoli, forse dovrei dirgli che vale solo per loro? */
+/* resettare margin e padding dei titoli, forse dovrei dirgli che vale solo per loro e altri specifici elementi? */
 
 .ms_mt_0 {
   margin-top: 0;
@@ -55,8 +59,57 @@
   padding-left: 0;
 }
 
-.border {
-  border-radius: 5px;
+
+[class^="col-"] > .ms_mt_mb_15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+[class^="col-"] > .ms_pt_pb_15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.ms_full {
+  width: 100%;
+}
+
+.ms_h_40 {
+  height: 40px;
+  line-height: 40px;
+}
+
+.ms_relative {
+  position: relative;
+}
+.ms_relative > .ms_v_center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ms_relative > .ms_h_center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ms_relative > .ms_r_0 {
+  position: absolute;
+  right: 0;
+}
+.ms_relative > .ms_l_0 {
+  position: absolute;
+  left: 0;
+}
+.ms_relative > .ms_t_0 {
+  position: absolute;
+  top: 0;
+}
+.ms_relative > .ms_b_0 {
+  position: absolute;
+  bottom: 0;
+}
+
+.ms_btn_transparent {
+  background-color: transparent;
 }
 
 /* usare classi apposite? */
@@ -67,41 +120,9 @@ ul li {
   display: inline-block;
 }
 
-[class^="col-"] > .ms_mt_mb_15 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.padding {
-  padding: 15px;
-}
-
-.ms_full {
-  width: 100%;
-}
-
 /* fine classi generiche */
 
 /* inizio classi specifiche */
-
-.ms_h_40 {
-  height: 40px;
-  line-height: 40px;
-}
-
-.ms_relative {
-  position: relative;
-}
-
-.ms_relative > .ms_v_center {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.ms_relative > .ms_r_0 {
-  position: absolute;
-  right: 0;
-}
 
 header #fixed {
   position: fixed;
@@ -110,15 +131,11 @@ header #fixed {
 }
 header #jumbo {
   margin-top: 70px;
-  height: 300px;
-}
-header #fixed button {
-  background-color: transparent;
 }
 
-main img.round {
-  width: 400px;
-  height: 400px;
+main img.ms_round {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border-color: white;
   background-color: white;
