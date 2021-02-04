@@ -99,12 +99,15 @@
 .ms_relative > .ms_v_center {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(0,-50%);
 }
 .ms_relative > .ms_h_center {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,0);
+}
+.ms_relative > .ms_v_center.ms_h_center {
+  transform: translate(-50%,-50%);
 }
 .ms_relative > .ms_r_0 {
   position: absolute;
@@ -194,12 +197,21 @@ header #jumbo p {
   background-color: rgb(26 188 156);
   color: white;
 }
+.ms_green {
+  color: rgb(26 188 156);
+}
 
 footer .ms_full:first-child {
   background-color: rgb(58 84 109);
 }
 footer .ms_full:last-child {
   background-color: rgb(44 62 80);
+}
+footer .ms_rounded {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 50%;
 }
 
 /* fine classi specifiche */
