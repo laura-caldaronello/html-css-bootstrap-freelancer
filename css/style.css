@@ -8,50 +8,50 @@
 
 /* debug, che mi pare non sia presente in bootstrap */
 
-.debug [class^="container"] {
+.ms_debug [class^="container"] {
   background-color: orange;
 }
-.debug [class^="container-"] {
+.ms_debug [class^="container-"] {
   background-color: yellow;
 }
-.debug [class^="col-"] {
+.ms_debug [class^="col-"] {
   min-height: 50px;
   background-color: lightblue;
   border: 1px solid blue;
 }
-.debug [class^="col-"] [class^="col-"] {
+.ms_debug [class^="col-"] [class^="col-"] {
   background-color: lightgreen;
   border: 1px solid green;
 }
-.debug [class^="col-"] [class^="col-"] [class^="col-"] {
+.ms_debug [class^="col-"] [class^="col-"] [class^="col-"] {
   background-color: lightgrey;
   border: 1px solid grey;
 }
 
 /* resettare margin e padding dei titoli, forse dovrei dirgli che vale solo per loro? */
 
-.mt-0 {
+.ms_mt_0 {
   margin-top: 0;
 }
-.mr-0 {
+.ms_mr_0 {
   margin-right: 0;
 }
-.mb-0 {
+.ms_mb_0 {
   margin-bottom: 0;
 }
-.ml-0 {
+.ms_ml_0 {
   margin-left: 0;
 }
-.pt-0 {
+.ms_pt_0 {
   padding-top: 0;
 }
-.pr-0 {
+.ms_pr_0 {
   padding-right: 0;
 }
-.pb-0 {
+.ms_pb_0 {
   padding-bottom: 0;
 }
-.pl-0 {
+.ms_pl_0 {
   padding-left: 0;
 }
 
@@ -67,31 +67,50 @@ ul li {
   display: inline-block;
 }
 
-[class^="col-"] {
-  padding-top: 15px;
-  padding-bottom: 15px;
+[class^="col-"] > .ms_mt_mb_15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .padding {
   padding: 15px;
 }
 
+.ms_full {
+  width: 100%;
+}
+
 /* fine classi generiche */
 
 /* inizio classi specifiche */
+
+.ms_h_40 {
+  height: 40px;
+  line-height: 40px;
+}
+
+.ms_relative {
+  position: relative;
+}
+
+.ms_relative > .ms_v_center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ms_relative > .ms_r_0 {
+  position: absolute;
+  right: 0;
+}
 
 header #fixed {
   position: fixed;
   top: 0;
   z-index: 1;
 }
-header #fixed + div {
-  margin-top: 80px;
+header #jumbo {
+  margin-top: 70px;
   height: 300px;
-}
-header #fixed [class^="col-"],
-header #fixed h3 {
-  line-height: 40px;
 }
 header #fixed button {
   background-color: transparent;
