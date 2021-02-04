@@ -28,6 +28,17 @@
   border: 1px solid grey;
 }
 
+.ms_wrapped_90 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.ms_wrapped_50 {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+
+
 /* resettare margin e padding dei titoli, forse dovrei dirgli che vale solo per loro e altri specifici elementi? */
 
 .ms_mt_0 {
@@ -117,7 +128,15 @@
 hr.ms_hr_bold {
   border: 2px solid;
   transform: translateY(-50%); /* altrimenti si posiziona sotto la prima metà della line-height */
+}
 
+.ms_white {
+  color: white;
+  border-color: white;
+}
+.ms_grey {
+  color: grey;
+  border-color: grey;
 }
 
 /* usare classi apposite? */
@@ -136,15 +155,22 @@ header #fixed {
   position: fixed;
   top: 0;
   z-index: 1;
+  background-color: rgb(44 62 80);
 }
 header #jumbo {
   margin-top: 70px;
+  background-color: rgb(26 188 156);
 }
 header #jumbo img {
   height: 300px;
 }
 header #jumbo p {
   margin: 15px auto;
+}
+
+/* questo lo usiamo solo in questo progetto */
+.ms_star_container {
+  vertical-align: top;
 }
 
 /* fine classi specifiche */
