@@ -173,4 +173,24 @@ header #jumbo p {
   vertical-align: top;
 }
 
+#about {
+  background-color: rgb(26 188 156);
+}
+
+.form-control.ms_personal {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.form-control.ms_personal::placeholder {
+  color: black;
+}
+
+.ms_btn_green {
+  background-color: rgb(26 188 156);
+  color: white;
+}
+
 /* fine classi specifiche */
